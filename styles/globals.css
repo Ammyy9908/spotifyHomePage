@@ -232,7 +232,7 @@ dd a:hover {
   display: block;
 }
 .article__top__header {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   box-sizing: border-box;
   height: auto;
@@ -779,8 +779,8 @@ dd a:hover {
   }
   .button__start,
   .button__plans {
-    padding: 0.8rem;
+    padding: 0.5rem;
     border: 2px solid #ddd;
-    width: 190px;
+    width: 290px;
   }
 }
