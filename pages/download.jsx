@@ -3,7 +3,6 @@ import React from "react";
 
 const Download = ({ ...pageProps }) => {
     const { sidenav, setSidenav } = pageProps;
-  console.log(sidenav);
   React.useEffect(() => {
     if (sidenav) {
       setSidenav(false);
