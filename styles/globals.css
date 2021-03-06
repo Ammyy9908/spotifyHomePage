@@ -63,11 +63,12 @@ a {
   align-items: center;
   justify-content: center;
   background-color: rgb(41, 65, 171);
+  /* background-color: rgb(41, 65, 171);
   background-image: url("https://www-growth.scdn.co/static/home/bursts.svg");
   background-size: 175%;
   background-position-x: 46%;
   background-position-y: 4%;
-  -webkit-box-pack: center;
+  -webkit-box-pack: center; */
   justify-content: center;
   min-height: 846px;
 }
@@ -597,6 +598,43 @@ dd a:hover {
   background-color: #fff;
   border-radius: 65px;
 }
+
+.sidenav {
+  width: 65%;
+  height: 100vh;
+  position: fixed;
+  background-color: #000;
+  right: 0px;
+  top: 50px;
+  transition: all 0.3s ease-in-out;
+}
+.sidenav__disable {
+  right: -550px;
+}
+.side__links {
+  width: 100%;
+  list-style-type: none;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 45%;
+  position: absolute;
+  top: 10px;
+  margin-left: 0;
+}
+.divider_mobile {
+  border-bottom: 5px solid #fff;
+  width: 100px;
+}
+.side__links > li > a {
+  font-size: 38px;
+  font-weight: 700;
+  transition: color 0.2s ease-in-out;
+}
+.side__links > li > a:hover {
+  color: #1ed760;
+}
 @media (min-width: 1200px) {
   .feature__subtitle {
     margin-top: 0px;
@@ -690,6 +728,9 @@ dd a:hover {
 
 @media (min-width: 768px) {
   .toggle {
+    display: none !important;
+  }
+  .sidenav {
     display: none !important;
   }
   .footer__nav {
