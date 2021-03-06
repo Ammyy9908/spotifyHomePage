@@ -58,7 +58,7 @@ a {
 }
 .home__hero {
   width: 100%;
-  height: 100vh;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,17 +73,19 @@ a {
   min-height: 846px;
 }
 .centered {
-  width: 65%;
+  width: 85%;
   text-align: center;
+  margin: 10px auto;
 }
 .center__heading {
-  width: 100%;
+  width: 80%;
+  margin: 10px auto;
 }
 .heading__first {
   display: flex;
   width: 100%;
   height: 105px;
-  margin-bottom: 35px;
+  margin-bottom: 45px;
 }
 .heading__second {
   display: flex;
@@ -607,17 +609,33 @@ dd a:hover {
   background-color: rgba(0, 0, 0, 0.712);
   right: 0px;
   top: 50px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
   backdrop-filter: blur(10px);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  padding: 10px;
+  z-index: 999;
+}
+.logo__image__sidenav {
+  width: 110px;
+  position: absolute;
+  top: 10px;
+  left: 105px;
+  margin-bottom: 45px;
+  transition: all 0.8s;
 }
 .sidenav__disable {
   right: -550px;
   align-items: flex-end;
 }
 .side__links {
+  margin-top: 65px;
   width: 100%;
+  position: absolute;
+  left: 100px;
   list-style-type: none;
-  color: #fff;
+  color: #ccc;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -626,6 +644,14 @@ dd a:hover {
   top: 10px;
   margin-left: 0;
   align-items: flex-start;
+  transition: all 0.8s;
+}
+.side__links__animate {
+  left: 0px;
+  color: #fff;
+}
+.logo__image__sidenav__animate {
+  left: 35px;
 }
 .divider_mobile {
   border-bottom: 5px solid #fff;
@@ -781,5 +807,18 @@ dd a:hover {
   .button__plans {
     padding: 0.5rem;
     width: 290px;
+    height: 55px;
+  }
+  .navbar_wrapper {
+    height: 55px;
+  }
+  .logo__image {
+    width: 110px;
+  }
+  .heading__first {
+    margin-bottom: 5px;
+  }
+  .home__hero {
+    align-items: flex-start;
   }
 }

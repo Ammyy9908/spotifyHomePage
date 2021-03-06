@@ -16,7 +16,7 @@ export default function Home({ sidenav, setSidenav }) {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         />
-        <title>Spotify|Listening is Everything</title>
+        <title>Listening is everything - Spotify</title>
       </Head>
       <HomeHero />
     </div>
