@@ -1,7 +1,15 @@
 import Head from "next/head";
 import Plans from "../Components/Plans";
+import React from "react";
 
-const Premium = () => {
+const Premium = ({ ...pageProps }) => {
+  const { sidenav, setSidenav } = pageProps;
+  React.useEffect(() => {
+    if (sidenav) {
+      setSidenav(false);
+    }
+  }, []);
+
   return (
     <div>
       <Head>

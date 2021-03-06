@@ -1,6 +1,14 @@
 import Head from "next/head";
+import React from "react";
 
-const Download = () => {
+const Download = ({ ...pageProps }) => {
+    const { sidenav, setSidenav } = pageProps;
+  console.log(sidenav);
+  React.useEffect(() => {
+    if (sidenav) {
+      setSidenav(false);
+    }
+  }, []);
     return ( 
         <div className="download__hero">
               <Head>

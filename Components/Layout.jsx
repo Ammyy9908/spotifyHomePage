@@ -3,9 +3,11 @@ import Navbar from "./Navbar"
 import Sidenav from "./Sidenav";
 import React from "react"
 
-const Layout = ({children}) => {
+const Layout = ({children,sidenav, setSidenav}) => {
 
-    const [sidenav,setSidenav] = React.useState(false);
+   
+
+    
     return ( 
         <>
        <Navbar sidenav={sidenav} setSidenav={setSidenav}/>

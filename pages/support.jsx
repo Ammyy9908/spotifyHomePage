@@ -1,6 +1,14 @@
 import Head from "next/head";
+import React from "react";
+const support = ({ ...pageProps }) => {
 
-const support = () => {
+    const { sidenav, setSidenav } = pageProps;
+  console.log(sidenav);
+  React.useEffect(() => {
+    if (sidenav) {
+      setSidenav(false);
+    }
+  }, []);
     return ( 
         <div>
             <Head>
