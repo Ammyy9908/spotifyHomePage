@@ -15,8 +15,8 @@ const Navbar = ({sidenav,setSidenav}) => {
                     <Link href="/support"><a>Support</a></Link>
                     <Link href="/download"><a>Download</a></Link>
                     <div className="divider"></div>
-                    <Link href="/register"><a>Sign up</a></Link>
-                    <Link href="/login"><a>Log in</a></Link>
+                    <Link href="/register"><a className="auth__link">Sign up</a></Link>
+                    <Link href="/login"><a className="auth__link">Log in</a></Link>
                 
             </div>
             <div className="toggle" onClick={()=>sidenav?setSidenav(false):setSidenav(true)}>{!sidenav?<MenuIcon/>:<CloseIcon/>}</div>

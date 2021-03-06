@@ -49,12 +49,16 @@ a {
   color: #fff;
   transition: color 0.3s ease-in-out;
   font-weight: bolder;
+  font-size: 14px;
+}
+.auth__link {
+  color: rgb(184, 171, 171) !important;
 }
 .links a:hover {
   color: #1ed760;
 }
 .divider {
-  border: 1px solid #fff;
+  border: 0.5px solid #fff;
 }
 .home__hero {
   width: 100%;
@@ -596,10 +600,20 @@ dd a:hover {
 }
 .download__btn {
   width: 200px;
-  padding: 1.3rem;
+  padding: 0.8rem;
   font-weight: 700;
   background-color: #fff;
   border-radius: 65px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+.download__btn:hover {
+  transform: scale(1.04);
+  box-shadow: 1px 1px 35px 0 rgba(0, 0, 0, 0.267);
 }
 
 .sidenav {
@@ -669,7 +683,201 @@ dd a:hover {
 .container__reg {
   width: 90%;
   margin: 10px auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.reg__icon {
+  width: 100px;
+}
+
+.form__section {
+  width: 85%;
+  margin: 35px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.form__section > h2 {
+  margin-top: 40px;
+  text-align: center;
+  line-height: 36px;
+  letter-spacing: -0.04em;
+  font-size: 32px;
+}
+.facebook__signup__button {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 22px;
+}
+.facebook__signup__button > a {
+  transition-property: background-color, border-color, color, box-shadow, filter,
+    transform;
+  width: 450px;
+  display: flex;
+  user-select: none;
+  padding: 1.5rem;
+  align-items: center;
+  font-weight: 700;
+  justify-content: center;
+  transform: translate3d(0px, 0px, 0px);
+  background-color: rgb(58, 88, 151);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  height: 48px;
+  border-radius: 65px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.or__divider {
+  display: table;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  margin: 0px auto 1em;
+  color: rgb(117, 117, 117);
+  position: relative;
+  text-align: center;
+  width: 85%;
+}
+.or__divider::before {
+  border-top: 1px solid rgb(189, 189, 189);
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 180px;
+  right: 10px;
+  top: -2px;
+}
+.or__divider::after {
+  border-top: 1px solid rgb(189, 189, 189);
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 180px;
+  left: 10px;
+  top: -2px;
+}
+.form__section > form > h2 {
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  font-weight: 700;
+  text-align: center;
+  padding: 0px 0px 1em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.input__group {
+  padding-bottom: 24px;
+}
+.bVfyrQ {
+  fill: rgb(24, 24, 24);
+  stroke: transparent;
+  height: 40px;
+}
+
+.input__label {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  font-weight: 700;
+  width: 100%;
+}
+.input__label > label {
+  color: rgb(24, 24, 24);
+  cursor: pointer;
+}
+.form__section > form {
+  width: 40%;
+}
+.input__group > input {
+  box-shadow: rgb(189 189 189) 0px 0px 0px 1px inset;
+  appearance: none;
+  background-image: none;
+  border: 0px;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(24, 24, 24);
+  border-radius: 4px;
+  padding: 14px;
+}
+
+.submit__button {
+  padding: 1.1rem;
+  border: 1px solid #ddd;
+  width: 100%;
   background-color: #1ed760;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 65px;
+  border: 0;
+  outline: 0;
+}
+.auth__switcher {
+  display: block;
+  width: 50%;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
+}
+.auth__switcher > a {
+  font-weight: 400;
+  color: #1ed760;
+}
+
+@media (min-width: 768px) {
+  .input__label {
+    padding-bottom: 8px;
+  }
+
+  .input__group > input {
+    border-radius: 4px;
+    padding: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .form__section > form {
+    width: 100%;
+  }
+
+  .or__divider::after {
+    border-top: 1px solid rgb(189, 189, 189);
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 90px;
+    left: 10px;
+    top: -2px;
+  }
+
+  .or__divider::before {
+    border-top: 1px solid rgb(189, 189, 189);
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 90px;
+    right: 10px;
+    top: -2px;
+  }
+
+  .facebook__signup__button > a {
+    width: 350px;
+  }
 }
 @media (min-width: 1200px) {
   .feature__subtitle {
