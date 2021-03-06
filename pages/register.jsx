@@ -28,10 +28,10 @@ const Regsiter = ({ ...pageProps }) => {
                   </span>
                   <form action="#">
                     <h2>Sign up with your email address</h2>
-                    <InputGroup type="email" placeholder="Enter your email"/>
-                    <InputGroup type="email" placeholder="Enter your email again."/>
-                    <InputGroup type="password" placeholder="Create a password"/>
-                    <InputGroup type="text" placeholder="Enter a profile name."/>
+                    <InputGroup type="email" placeholder="Enter your email" label="What's your email"/>
+                    <InputGroup type="email" placeholder="Enter your email again." label="Confirm your email"/>
+                    <InputGroup type="password" placeholder="Create a password" label="Create a password"/>
+                    <InputGroup type="text" placeholder="Enter a profile name." label="What should we call you?"/>
                     <input type="submit" value="SIGN UP" className="submit__button"/>
                   </form>
                   <span className="auth__switcher">Have an account?<Link href="/login"><a>Login</a></Link></span>

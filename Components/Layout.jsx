@@ -17,10 +17,10 @@ const Layout = ({children,sidenav, setSidenav}) => {
     
     return ( 
         <>
-       {route!=="register"&&<Navbar sidenav={sidenav} setSidenav={setSidenav}/>}
+       {route!=="register"&& route!=="login"&&<Navbar sidenav={sidenav} setSidenav={setSidenav}/>}
        <Sidenav sidenav={sidenav}/>
         {children}
-        {route!=="register"&&<Footer/>}
+        {route!=="register"&& route!=="login"&&<Footer/>}
         </>
      );
 }
