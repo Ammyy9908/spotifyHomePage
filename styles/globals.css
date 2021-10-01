@@ -29,12 +29,21 @@ a {
   background-color: #000;
 }
 
-.navbar_wrapper {
+/* .navbar_wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 75px;
   width: 80%;
+  margin: 0 auto;
+} */
+/* hacktoberFest changes */
+.navbar_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  width: 81%;
   margin: 0 auto;
 }
 .logo {
@@ -187,8 +196,12 @@ dd a:hover {
   color: #1ed760;
 }
 
-.social__links {
+/* .social__links {
   margin: 0 15px 0 auto;
+} */
+/* hacktoberFest changes */
+.social__links {
+  margin: 0 5px 0 auto;
 }
 
 .social__links ul {
